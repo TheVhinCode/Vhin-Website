@@ -70,4 +70,8 @@
         .img-box {
             max-width: 50rem;
         }
+        .f-box1{
+            padding-right: 0;
+            margin-right: 0;
+        }
     }
