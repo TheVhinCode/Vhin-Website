@@ -74,4 +74,17 @@
             padding-right: 0;
             margin-right: 0;
         }
+        .f-container{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+        }
+        .f-box1{
+            grid-area: 1 / 1 / 2 / 5;
+            align-items: center;
+            text-align: center;
+        }
+        .f-box5{
+            grid-area: 3 / 1 / 4 / 5;
+            text-align: center;
+        }
     }
