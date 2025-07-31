@@ -1,0 +1,73 @@
+/*========== 2080px -- 1024px ==========*/
+    @media (max-width: 71.2rem){
+        html{
+            font-size: 56.25%;
+        }
+    }
+/*========== 1024px --  ==========*/
+    @media (max-width: 64.1rem){
+        html{
+            font-size: 50%;
+        }
+    }
+    @media (max-width: 56.9rem){
+        html{
+            font-size: 43.75%;
+        }
+    }
+    @media (max-width: 49.8rem){
+        .h-container {
+            grid-template-columns: 1fr;
+        }
+        .h-left {
+            align-items: center;
+            padding: 8rem 0;
+        }
+        .h-heading {
+            display: flex;
+        }
+        .h-txt{
+            display: flex;
+        }
+        .h-ratings {
+            display: flex;
+        }
+        .h-ratings p{
+            padding-left: 2rem;
+            padding-top: 0.7rem;
+        }
+        .section1{
+            gap: 7rem;
+        }
+    }
+    @media (max-width: 37.9rem){
+        html{
+            font-size: 37.5%;
+        }
+        .h-heading {
+            flex-direction: column;
+            align-items: center;
+        }
+        .h-txt{
+            flex-direction: column;
+            align-items: center;
+        }
+        .section1{
+            grid-template-columns: 1fr;
+        }
+        .m-right{
+            align-items: center;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .s3-container,
+        .s4-container{
+            grid-template-columns: 1fr;
+        }
+        .s3-heading,
+        .s4-heading{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .img-box {
+            max-width: 50rem;
+        }
+    }

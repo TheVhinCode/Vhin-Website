@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/*============================== HEADER___NAV-BAR ==============================*/
+.nav-bar {
+    background-color: rgb(3, 0, 16);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.nav-img {
+    display: flex;
+    gap: 1rem;
+}
+.search,
+.home {
+    width: 20px;
+    color: white;
+}
+/*============================== HEADER___HERRO ==============================*/
+.hero {
+    background-color: #eeecec;
+    position: relative;
+    padding-top: 5.5rem;
+}
+
+.h-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 42% 56%;
+}
+
+.h-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+.h-heading h1{
+    font-size: 4.8rem;
+}
+.h-txt p{
+    font-size: 1.8rem;
+}
+.h-btn{
+    display: flex;
+    gap: 2rem;
+}
+.h-btn button{
+    font-size: 2.2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.h-btn1{
+    background-color: rgb(9, 62, 197);
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: white;
+    transition: background-color 0.5s ease,
+                color 0.5s ease,
+                border 0.5s ease;
+}
+.h-btn1:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(9, 103, 244);
+    color: rgb(9, 103, 244);
+}
+.h-btn2{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0,);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.h-btn2:hover{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+}
+.h-ratings p{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+.h-right {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.h-right img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.h-ratings img{
+    width: 20px;
+}
+/*============================== MAIN___SECTION-1 ==============================*/
+.main{
+    background-color: white;
+    position: relative;
+    padding-top: 4rem;
+}
+
+.m-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 9rem 0;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding-bottom: 9rem;
+}
+
+.m-left {
+    height: 50rem;
+    overflow: hidden;
+}
+.m-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.m-left img:hover {
+    transform: scale(1.09);
+}
+
+.m-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.s1-heading{
+    font-size: 3.2rem;
+}
+
+.s1-txt{
+    font-size: 1.6rem;
+}
+
+.s1-txt2{
+    font-size: 1.6rem;
+    color: blue;
+    padding-bottom: 2rem;
+}
+
+.title1{
+    font-size: 2rem;
+}
+
+.price-container{
+    display: flex;
+    gap: 2rem;
+}
+.s1-box1,
+.s1-box2{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 0.6rem 1.6rem;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.s1-box1 span,
+.s1-box2 span{
+    font-size: 1.8rem;
+}
+
+#price{
+    font-weight: bold;
+}
+
+.color-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.color-container span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 2px solid gray;
+    padding: 17px 20px;
+    border-radius: 5px;
+}
+
+.s1-btn{
+    width: 16rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(9, 103, 244);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin-top: 2rem;
+    transition: all 0.5s ease;
+}
+.s1-btn:hover{
+    color: rgb(9, 103, 244);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(9, 103, 244);
+}
+/*============================== MAIN___SECTION-2 ==============================*/
+.slider-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+
+.s2-container {
+    display: flex;
+    gap: 8rem;
+    width: fit-content;
+    animation: scrollLeft 40s linear infinite;
+}
+
+/*.s2-container:hover {
+  animation-play-state: paused;
+}*/
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo {
+  flex: 0 0 15rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.tc {
+    width: 10rem;
+}
+/*============================== MAIN___SECTION-3 ==============================*/
+.section3 {
+    background-color: #eeecec;
+}
+
+.s3-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr 3fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.s3-heading {
+    grid-area: 1 / 1 / 2 / 4;
+    align-content: center;
+    justify-items: center;
+}
+
+.s3-heading h1{
+    font-size: 3.2rem;
+}
+
+.s3-img1,
+.s3-img2,
+.s3-img3{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+}
+.title-s3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.title-s3:hover{
+    color: rgb(9, 103, 244);
+}
+.s3-img1 p,
+.s3-img2 p,
+.s3-img3 p{
+    font-size: 1.8rem;
+}
+
+.img-box {
+    max-width: 40rem;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.img-box img:hover {
+    transform: translateY(-20px);
+}
+/*============================== MAIN___SECTION-4 ==============================*/
+.s4-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 5rem 3rem 8rem 3rem;
+}
+
+.s4-heading{
+    grid-area: 1 / 1 / 2 / 4;
+    align-content: center;
+    justify-items: center;
+}
+.s4-heading h1{
+    font-size: 3.2rem;
+}
+.s4-box1,
+.s4-box2,
+.s4-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5rem 3rem;
+    gap: 3rem;
+    text-align: center;
+}
+
+.imgBox{
+    width: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.imgBox img{
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.imgBox img:hover{
+    transform: scale(1.1);
+}
+
+.starBox4{
+    display: flex;
+    gap: 1rem;
+}
+.starBox4 img{
+    width: 20px;
+}
+.s4-box1 p,
+.s4-box2 p,
+.s4-box3 p{
+    font-size: 1.6rem;
+}
+
+.raterName{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/*============================== FOOTER ==============================*/
+.footer{
+    background-color: rgb(3, 0, 16);
+}
+
+.f-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    row-gap: 8rem;
+    color: white;
+    column-gap: 2rem;
+    padding: 8rem 3rem 2rem 3rem;
+}
+
+.f-box1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+}
+
+.f-title{
+    color: white;
+}
+
+.fbtn input{
+    padding: 1.3rem 1.8rem;
+    font-size: 1.6rem;
+}
+.fbtn button{
+    padding: 1.3rem 1.8rem;
+    border-radius: 0 30px 30px 0;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: rgb(9, 103, 244);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.fbtn button:hover{
+    border: 2px solid rgb(9, 103, 244);
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 103, 244);
+}
+
+.f-box1 p,
+.f-box2 p,
+.f-box3 p,
+.f-box4 p{
+    font-size: 1.6rem;
+}
+
+.f-box2,
+.f-box3,
+.f-box4{
+    line-height: 3rem;
+}
+
+.f-box5{
+    display: flex;
+    gap: 5rem;
+    grid-area: 2 / 1 / 3 / 5;
+}
+.f-box5 p{
+    font-size: 1.6rem;
+}
+.f-box5 .t{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
