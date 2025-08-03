@@ -1,56 +1,97 @@
-/*========== 2080px -- 1024px ==========*/
-    @media (max-width: 71.2rem){
-        html{
-            font-size: 56.25%;
-        }
+/* Tablets landscape / laptops */
+@media (max-width: 64rem) {
+  /* 1024px */
+    .main{
+        padding-top: 0;
     }
-/*========== 1024px --  ==========*/
-    @media (max-width: 64.1rem){
-        html{
-            font-size: 50%;
-        }
+    .s3-container {
+        padding-top: 0;
     }
-    @media (max-width: 56.9rem){
-        html{
-            font-size: 43.75%;
-        }
+    .s4-container{
+        padding: 2rem 3rem 8rem 3rem;
     }
-    @media (max-width: 49.8rem){
-        .h-container {
-            grid-template-columns: 1fr;
+    .section1 {
+        gap: 6rem;
+    }
+}
+
+/* Tablets portrait / landscape phones */
+@media (max-width: 48rem) {
+  /* 768px */
+    .h-container {
+        grid-template-columns: 1fr;
+    }
+    .h-left {
+        align-items: center;
+        padding: 8rem 0 5rem 0;
+        text-align: center;
+    }
+    .section1 {
+        gap: 2rem;
+    }
+    .m-container{
+        padding: 6rem 0;
+    }
+    .section1 {
+        padding-bottom: 6rem;
+    }
+    .s3-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    .s3-heading {
+        grid-area: 1 / 1 / 2 / 2;
+        align-content: center;
+        justify-items: center;
+        padding: 3rem 0;
+    }
+    .s3-img1,
+    .s3-img2,
+    .s3-img3{
+        gap: 1rem;
+    }
+    .s3-container {
+        padding-bottom: 3rem;
+    }
+    .s4-container{
+        padding: 0 3rem 5rem 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    .s4-heading{
+        grid-area: 1 / 1 / 2 / 2;
+        align-content: center;
+        justify-items: center;
+        padding: 3rem 0;
+    }
+    .f-container{
+        padding: 4rem 3rem 2rem 3rem;
+    }
+}
+
+/* Small phones (Spark 10 Pro included) */
+@media (max-width: 30rem) {
+  /* 480px */
+        .f-container{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            padding: 3rem 3rem 2rem 2rem;
         }
-        .h-left {
+        .f-box1{
+            grid-area: 1 / 1 / 2 / 5;
             align-items: center;
-            padding: 8rem 0;
+            text-align: center;
+            padding-right: 0;
+            margin-right: 0;
         }
-        .h-heading {
-            display: flex;
+        .f-box5{
+            grid-area: 3 / 1 / 4 / 5;
+            text-align: center;
+            gap: 1rem;
         }
-        .h-txt{
-            display: flex;
-        }
-        .h-ratings {
-            display: flex;
-        }
-        .h-ratings p{
-            padding-left: 2rem;
-            padding-top: 0.7rem;
-        }
-        .section1{
-            gap: 7rem;
-        }
-    }
-    @media (max-width: 37.9rem){
-        html{
-            font-size: 37.5%;
-        }
-        .h-heading {
-            flex-direction: column;
-            align-items: center;
-        }
-        .h-txt{
-            flex-direction: column;
-            align-items: center;
+        .s3-heading {
+            text-align: center;
+            padding: 3rem 3rem 0 3rem;
         }
         .section1{
             grid-template-columns: 1fr;
@@ -59,32 +100,10 @@
             align-items: center;
             grid-area: 1 / 1 / 2 / 2;
         }
-        .s3-container,
-        .s4-container{
-            grid-template-columns: 1fr;
+        .m-container{
+            padding: 3rem 0 6rem 0;
         }
-        .s3-heading,
-        .s4-heading{
-            grid-area: 1 / 1 / 2 / 2;
+        .fbtn input,.fbtn button{
+            padding: 1rem;
         }
-        .img-box {
-            max-width: 50rem;
-        }
-        .f-box1{
-            padding-right: 0;
-            margin-right: 0;
-        }
-        .f-container{
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: 1fr;
-        }
-        .f-box1{
-            grid-area: 1 / 1 / 2 / 5;
-            align-items: center;
-            text-align: center;
-        }
-        .f-box5{
-            grid-area: 3 / 1 / 4 / 5;
-            text-align: center;
-        }
-    }
+}
